@@ -8,9 +8,8 @@ export default function Home() {
     
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [perPage,setPerPage] = useState(10);
 
-  
+  //Grab Table Data Through the API
   async function fetchTableData() {
     setLoading(true);
     const response = await fetch('http://localhost:3000/api/projects');
@@ -42,8 +41,8 @@ export default function Home() {
   },[]);
 
 
-  return (
-    
+  return (  
+    //Draw out the table
     <main className="Projects">      
       <section>
         <DataTable
