@@ -10,11 +10,12 @@ type Project = {
   project_founder: string,
 }
 
-// Sends a query to the db and returns the result
+// Sends a query to the db and returns the results
 export default async function handler(
 	req: NextApiRequest,
 	res: NextApiResponse<Project[]>
 ) {
+	//grabs the project informations per row and sent to result asynchronously 
 	const result = await dbquery("SELECT project_id, project_name, project_description, project_founder FROM projects;")
 		.then((res) => res.rows)
 		.catch((err) => console.error("Error executing query", err.stack));	
