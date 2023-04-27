@@ -1,11 +1,3 @@
-## Welcome
-
-Welcome to our developer challenge! This challenge is designed to mimic the day-to-day activities on our project. We use Next.js and postgres as part of our stack. These are designed to be challenging so we don't expect everything to be perfect. Good luck!
-
-If you get stuck anywhere at all, just assume it works and move onto something else.
-
-First, create a repo for this project. Make sure to push your work to your own repo.
-
 ## Getting Started
 
 Run the development server:
